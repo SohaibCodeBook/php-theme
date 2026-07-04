@@ -119,7 +119,7 @@
   <div class="pl-footer-bottom">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
-        <p>&copy; <?php echo esc_html( date( 'Y' ) ); ?> <?php echo esc_html( pl_site( 'company_name' ) ); ?>. <?php esc_html_e( 'All rights reserved.', 'primelink' ); ?></p>
+        <p>&copy; 2025 <?php echo esc_html( pl_site( 'company_name' ) ); ?>. <?php esc_html_e( 'All rights reserved.', 'primelink' ); ?></p>
         <div class="d-flex gap-3">
           <a href="<?php echo esc_url( home_url( '/privacy-policy' ) ); ?>"><?php esc_html_e( 'Privacy Policy', 'primelink' ); ?></a>
           <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>"><?php esc_html_e( 'Contact', 'primelink' ); ?></a>
