@@ -190,7 +190,7 @@ function pl_mb_home_hero( $post ) {
    RENDER: Home Stats
    ================================================================ */
 function pl_mb_home_stats( $post ) {
-    echo '<p style="color:#555;font-size:0.85em;">These stats appear in both the hero and the stats strip below it.</p>';
+    echo '<p style="color:#555;font-size:0.85em;">The first three stats appear in the hero section below the call-to-action buttons.</p>';
     for ( $i = 1; $i <= 4; $i++ ) {
         echo '<hr style="margin:12px 0;"><strong>Stat ' . $i . '</strong>';
         pl_input( $post->ID, 'stat' . $i . '_num',         'Number',      'e.g. 200' );

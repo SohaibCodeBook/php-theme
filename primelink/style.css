@@ -529,7 +529,7 @@ body.is-home #site-header:not(.scrolled) .pl-hamburger span { background: #fff; 
 }
 
 .pl-hero h1 {
-  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  font-size: clamp(2.1rem, 5.25vw, 3.65rem);
   font-weight: 800;
   color: #fff;
   line-height: 1.1;
@@ -1620,7 +1620,7 @@ body.is-home #site-header:not(.scrolled) .pl-hamburger span { background: #fff; 
   .section-lg { padding: 70px 0; }
   .section-md { padding: 50px 0; }
   .pl-hero { padding: 120px 0 70px; min-height: auto; }
-  .pl-hero h1 { font-size: clamp(2rem,5vw,3rem); }
+  .pl-hero h1 { font-size: clamp(1.85rem, 4.5vw, 2.75rem); }
   .pl-hero-main-img { height: 320px; }
   .pl-hero-float-card.top-left { top: -10px; left: -10px; }
   .pl-hero-float-card.bottom-right { bottom: -10px; right: -10px; }

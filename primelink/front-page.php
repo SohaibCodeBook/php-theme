@@ -145,20 +145,6 @@ for ( $i = 0; $i < 8; $i++ ) {
   </div>
 </section>
 
-<!-- STATS STRIP -->
-<div class="pl-stats-strip" aria-label="<?php esc_attr_e('Company statistics','primelink'); ?>">
-  <div class="container-fluid px-0">
-    <div class="pl-stats-grid">
-      <?php foreach ($pl_stats as $stat) : ?>
-      <div class="pl-stat-item">
-        <span class="pl-stat-num"><?php echo esc_html($stat['num']); ?><?php if($stat['suffix']): ?><span class="plus" aria-hidden="true"><?php echo esc_html($stat['suffix']); ?></span><?php endif; ?></span>
-        <span class="pl-stat-label"><?php echo esc_html($stat['label_strip']); ?></span>
-      </div>
-      <?php endforeach; ?>
-    </div>
-  </div>
-</div>
-
 <!-- ABOUT -->
 <section class="section-lg" aria-labelledby="about-h">
   <div class="container">
