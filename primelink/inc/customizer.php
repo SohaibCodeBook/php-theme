@@ -140,6 +140,10 @@ function primelink_customizer( $wp_customize ) {
         $wp_customize->add_setting( 'pl_au_' . $key, [ 'default' => $def, 'sanitize_callback' => 'esc_url_raw', 'transport' => 'refresh' ] );
         $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'pl_au_' . $key, [ 'label' => $lbl, 'section' => 'primelink_about' ] ) );
     };
+    $ata = function( $key, $lbl, $def ) use ( $wp_customize ) {
+        $wp_customize->add_setting( 'pl_au_' . $key, [ 'default' => $def, 'sanitize_callback' => 'sanitize_textarea_field', 'transport' => 'refresh' ] );
+        $wp_customize->add_control( 'pl_au_' . $key, [ 'label' => $lbl, 'section' => 'primelink_about', 'type' => 'textarea' ] );
+    };
 
     // Banner
     $at( 'banner_badge',   'Banner: Badge Text',    'Who We Are' );
@@ -150,7 +154,7 @@ function primelink_customizer( $wp_customize ) {
     $ai( 'story_image',   'Story: Photo (Upload)',   'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=75&auto=format&fit=crop' );
     $at( 'est_year',       'Story: Established Year', '2014' );
     $at( 'story_title',    'Story: Section Heading',  'Ceylon PrimeLink Holdings (Pvt) Ltd' );
-    $at( 'para1',          'Story: Paragraph 1',      'Ceylon PrimeLink Holdings is a Sri Lankan multi-sector company that connects engineering expertise with modern technology solutions. Established to serve the growing needs of Sri Lankan businesses, infrastructure developers, and individuals, we operate across geotechnical engineering, GIS, AutoCAD, construction consultancy, software development, and IT retail.' );
+    $ata( 'para1',          'Story: Paragraph 1 (Core Expertise)', 'Our company primarily specializes in landslide investigations and geotechnical testing. Much of our work focuses on landslide-prone areas in Sri Lanka, including districts such as Kandy, Nuwara Eliya, Badulla, Kegalle, Ratnapura, Galle, Kalutara, and parts of Gampaha and Kurunegala. This has been our core expertise, and over time we expanded our services to include AutoCAD drafting, engineering design, and related consultancy services.' );
     $at( 'para2',          'Story: Paragraph 2',      "Our mission is to provide practical, cost-effective, and professionally delivered services that make a real difference to our clients' projects." );
     $at( 'para3',          'Story: Paragraph 3',      'We are based at our main office and retail outlet in Gampaha, conveniently located in the Western Province of Sri Lanka, and we serve clients across the island.' );
 
