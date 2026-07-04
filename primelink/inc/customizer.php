@@ -224,17 +224,18 @@ function primelink_customizer( $wp_customize ) {
 
     // Engineering section
     $st( 'eng_heading', 'Engineering: Section Heading', 'Engineering & Geotechnical Services' );
-    $st( 'eng_intro',   'Engineering: Intro Paragraph', 'Professional geotechnical, construction, and engineering services delivered with technical precision and industry-standard methodologies.' );
+    $st( 'eng_intro',   'Engineering: Intro Paragraph', 'Professional geotechnical engineering, landslide & hazard testing, and mitigation services delivered with technical precision and industry-standard methodologies.' );
     $st( 'eng_price',   'Engineering: Starting Price',  'LKR 100,000' );
     $si( 'eng_image',   'Engineering: Photo (Upload)',   'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=700&q=75&auto=format&fit=crop' );
-    // Engineering checklist items (9)
+    // Engineering checklist items (10)
     $eng_items = [
-        'Geotechnical Investigations & SPT', 'Borehole Drilling (Soil & Rock)',
-        'Core Logging & Engineering Reports', 'Landslide Mitigation Works',
-        'Retaining Wall Design', 'Earth Reinforcement Systems',
-        'Foundation Engineering', 'Site Re-evaluation (Gov-Rejected)', 'Construction Consultancy',
+        'Geotechnical Investigations & SPT', 'Landslide & Hazard Testing',
+        'Borehole Drilling (Soil & Rock)', 'Core Logging & Engineering Reports',
+        'Landslide Mitigation Works', 'Retaining Wall Design',
+        'Earth Reinforcement Systems', 'Foundation Engineering',
+        'Site Re-evaluation (Gov-Rejected)', 'Construction Consultancy',
     ];
-    for ( $i = 1; $i <= 9; $i++ ) {
+    for ( $i = 1; $i <= 10; $i++ ) {
         $st( 'eng_item'.$i, 'Engineering: Item '.$i, $eng_items[ $i - 1 ] );
     }
 

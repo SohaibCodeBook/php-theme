@@ -13,17 +13,18 @@ $banner_subtext = pl_services( 'banner_subtext', 'Professional engineering, GIS,
 
 // Engineering section
 $eng_heading = pl_services( 'eng_heading', 'Engineering & Geotechnical Services' );
-$eng_intro   = pl_services( 'eng_intro',   'Professional geotechnical, construction, and engineering services delivered with technical precision and industry-standard methodologies.' );
+$eng_intro   = pl_services( 'eng_intro',   'Professional geotechnical engineering, landslide & hazard testing, and mitigation services delivered with technical precision and industry-standard methodologies.' );
 $eng_price   = pl_services( 'eng_price',   'LKR 100,000' );
 $eng_image   = pl_services( 'eng_image',   'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=700&q=75&auto=format&fit=crop' );
 $eng_items   = [];
 $eng_defaults = [
-    'Geotechnical Investigations & SPT', 'Borehole Drilling (Soil & Rock)',
-    'Core Logging & Engineering Reports', 'Landslide Mitigation Works',
-    'Retaining Wall Design', 'Earth Reinforcement Systems',
-    'Foundation Engineering', 'Site Re-evaluation (Gov-Rejected)', 'Construction Consultancy',
+    'Geotechnical Investigations & SPT', 'Landslide & Hazard Testing',
+    'Borehole Drilling (Soil & Rock)', 'Core Logging & Engineering Reports',
+    'Landslide Mitigation Works', 'Retaining Wall Design',
+    'Earth Reinforcement Systems', 'Foundation Engineering',
+    'Site Re-evaluation (Gov-Rejected)', 'Construction Consultancy',
 ];
-for ( $i = 1; $i <= 9; $i++ ) {
+for ( $i = 1; $i <= 10; $i++ ) {
     $val = pl_services( 'eng_item'.$i, $eng_defaults[ $i - 1 ] );
     if ( $val ) $eng_items[] = $val;
 }
