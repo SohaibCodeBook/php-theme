@@ -8,6 +8,7 @@ defined('ABSPATH') || exit;
 require_once get_template_directory() . '/inc/setup-wizard.php';
 require_once get_template_directory() . '/inc/meta-boxes.php';
 require_once get_template_directory() . '/inc/logo.php';
+require_once get_template_directory() . '/inc/seo.php';
 
 /* ================================================================
    THEME SETUP
