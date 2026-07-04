@@ -1,0 +1,435 @@
+Ceylon PrimeLink Holdings Website Development Instructions
+Project Overview
+The existing website (https://primelink.com.lk) was initially created using the SiteJet AI Website Builder. It currently serves as a temporary version of the company website.
+The objective of this project is to completely rebuild the website using WordPress, creating a modern, professional, responsive, and fast-loading corporate website while keeping the existing business information and services.
+This is not an e-commerce website. No online payments, shopping carts, or purchasing systems are required at this stage.
+Website Access
+You will be provided with:
+• WordPress Administrator Access
+• Hosting Control Panel (if required)
+• Existing domain: https://primelink.com.lk
+WordPress has already been installed. BUT If you want another method for developing, I can work on that to give you that access. Let me know ASAP
+The hosting package is limited to 1 GB. Approximately 900 MB of storage MIGHT remains available. Please optimize all images and files to ensure the website remains lightweight and loads quickly.
+Existing Website
+The current website is only a temporary template. You may use the existing website as a reference for:
+• Text content
+• Service information
+• Contact details
+• Company information
+However, do not copy the design.
+The new website should have a modern corporate appearance with significantly improved:
+• Layout
+• Typography
+• User experience
+        
+• Mobile responsiveness
+• Visual quality
+• Professional presentation
+Design Requirements
+The homepage should immediately communicate that PrimeLink Holdings is a professional engineering and technology company.
+The design should be:
+• Modern
+• Clean
+• Professional
+• Fast loading
+• Responsive on desktop, tablet, and mobile
+• Easy to maintain using WordPress
+Avoid unnecessary animations that reduce performance.
+You have to create subpages and dummy ads which look like real. So the website will look active Dummy ratings and comments from sri lankan look like names or people also preffered
+Make sure to add listings as appropriate and enough to cover gaps
+Images
+You may use:
+• ANY IMAGE FROM ANYWHERE IN INTERNET
+BUT
+DO NOT use photographs that clearly represent locations from the following countries:
+• United States
+• Canada
+• Japan
+• Australia
+• New Zealand
+Images from other countries are acceptable.
+Where suitable, AI-generated engineering and construction illustrations are also preferred but needs to be limited.
+You are required to make a logo just for website - can use AI
+      
+Use same keyword structures so google will index it properly
+   Main Navigation Menu
+Create the following pages:
+• Home
+• About Us
+• Services
+• Engineering Solutions
+• Outlets
+• IT Services
+• Contact
+The remaining pages will be developed during the next phase.
+Homepage Requirements
+Create a completely redesigned homepage.
+The homepage should include:
+Hero Section
+A professional banner introducing Ceylon PrimeLink Holdings Suggested headline:
+Connecting Industries. Unlocking Opportunities.
+Include a short introduction explaining that the company provides solutions in:
+• Engineering
+• Construction
+• Geotechnical Engineering
+• Mining Support
+• GIS Solutions
+• IT Services
+• Software Development
+Include two buttons:
+• Request a Quotation
+   
+• Contact Us Company Introduction
+Introduce PrimeLink Holdings as a Sri Lankan company providing practical engineering and technology solutions.
+Mention that the company operates across multiple sectors including:
+• Engineering
+• Construction
+• Geotechnical Engineering
+• Mining Support
+• GIS
+• AutoCAD Design
+• Software Development
+• Database Solutions
+• IT Products
+Services Overview
+Create attractive service cards for:
+• Engineering Solutions
+• Construction Services
+• GIS & Mapping
+• AutoCAD Design
+• Geotechnical Engineering
+• Landslide Mitigation
+• Slope Stability Analysis
+• Housing Design
+• Structural Design
+• Database Solutions
+• Software Development
+• IT Products
+Each service card should contain:
+• Professional icon
+• Short description
+      
+• Read More button
+   Why Choose PrimeLink
+Include a section highlighting:
+• Professional Engineering Experience
+• Reliable Technical Solutions
+• Modern Software Expertise
+• Affordable Pricing
+• Responsive Customer Service
+• Sri Lankan Based Company
+• Customized Project Solutions
+Request a Quotation
+Create a quotation request form. Fields:
+• Name
+• Phone
+• Email
+• Subject
+• Message
+The form should send enquiries directly to:
+info@primelink.com.lk
+No quotation calculator is required.
+Contact Information
+Display:
+PrimeLink Holdings
+54A, Sanasa Ideal Shopping Complex Colombo Road
+Gampaha 10019
+Sri Lanka
+Phone:
+       
++94 775 860 868 Email: info@primelink.com.lk
+About Us Page
+Create a professional company profile.
+Avoid copying the existing text directly.
+Rewrite it into a more corporate style.
+Include the following information:
+PrimeLink Holdings is a Sri Lankan multi-sector company delivering engineering, geotechnical, construction, GIS, software, and IT solutions.
+Our mission is to connect industries through practical engineering knowledge, modern technology, and innovative solutions.
+We provide services including:
+• Geotechnical Engineering
+• Construction Consultancy
+• Landslide Mitigation
+• Slope Stability Analysis
+• AutoCAD Drafting
+• ArcGIS
+• QGIS
+• GIS Mapping
+• Database Development
+• Software Development
+• IT Consulting
+• Computer Hardware Solutions
+Mention that the company mainly serves clients throughout Sri Lanka. Communication is primarily conducted through:
+• Email
+• Telephone
+• WhatsApp
+    Encourage visitors to use the enquiry form to request quotations or discuss project requirements.
+   
+Services Page
+Create a dedicated services page with professional sections. Include the following service categories.
+Engineering Services
+• Geotechnical Investigations
+• Landslide Mitigation
+• Retaining Wall Design
+• Foundation Engineering
+• Construction Consultancy
+• Earth Reinforcement
+Engineering Software Services
+Include support for:
+• AutoCAD
+• ArcGIS
+• QGIS
+• GeoStudio
+• PLAXIS
+Offer:
+• Engineering Drafting
+• GIS Mapping
+• Terrain Analysis
+• Slope Stability Analysis
+• Project Design Support
+IT Services
+Include:
+• Database Development
+• Software Development
+• Small Business Systems
+• Cashier Systems
+• Inventory Systems
+      
+• Technical Support
+   Design Services
+Include:
+• Housing Plans
+• Structural Concepts
+• Engineering Consultation
+• Project Planning
+Pricing Information
+Mention the existing starting prices from the current website. Examples:
+Database Solutions
+Starting from LKR 45,000
+Software, GIS and Engineering Projects
+Starting from LKR 100,000
+Mention that pricing depends on project complexity.
+Do not create an online purchasing system.
+YOU CAN COME UP WITH OWN PRICING AND DUMMY ADS OR LISTINGS TO FILL GAPS
+General Notes
+This website is intended to present the company's services professionally and generate customer enquiries.
+The overall design should reflect a modern engineering and technology company rather than a retail website.
+Focus on:
+• Clean corporate branding
+• Fast loading speed
+• Professional typography
+• Responsive design
+• SEO-friendly page structure
+• Optimized image sizes
+• Easy future maintenance in WordPress
+No e-commerce functionality is required in this phase.
+      
+PrimeLink Holdings Website Development Instructions (Phase 2)
+Remaining Website Pages
+The following pages are to be developed after completing the Home, About Us, and Services pages.
+1. Engineering Solutions Page
+This page should present PrimeLink Holdings as a professional engineering consultancy and construction solutions provider.
+The overall appearance should be modern, technical, and suitable for an engineering company.
+Main Engineering Services
+Create separate sections for the following services.
+Geotechnical Engineering
+Include services such as:
+• Soil Investigation
+• Standard Penetration Test (SPT)
+• Borehole Drilling
+• Rock Core Drilling
+• Core Logging
+• Engineering Reports
+• Geotechnical Site Investigations
+Explain that boreholes can be drilled through soil and continue into bedrock where required for engineering investigations.
+Typical project pricing:
+• Starting from approximately LKR 100,000
+• Larger investigations may range up to LKR 500,000 or more, depending on project scope.
+If exact pricing is not applicable, simply state:
+"Please contact us for a quotation."
+Landslide Mitigation & Slope Engineering
+Include services such as:
+• Landslide Mitigation
+• Retaining Wall Design
+      
+• Slope Stabilization
+• Earth Reinforcement
+• Government-Rejected Site Re-evaluation
+• Site Stability Assessments
+• Foundation Recommendations
+For projects requiring site inspections or engineering consultation, display:
+Contact us for a quotation.
+GIS & Mapping Solutions
+Create a dedicated section describing:
+• ArcGIS Projects
+• QGIS Projects
+• GIS Mapping
+• Spatial Analysis
+• Terrain Modelling
+• Engineering GIS Applications
+Mention that services are available for:
+• Engineering companies
+• Universities
+• Undergraduate students
+• Postgraduate and Master's degree research
+• Infrastructure development
+• Highway engineering studies
+• Government and private sector projects
+Important
+PrimeLink Holdings only accepts legitimate project work.
+This company does not provide freelance assignment completion or academic misconduct services.
+AutoCAD & Engineering Design
+Include services such as:
+• AutoCAD Drafting
+• Engineering Drawings
+      
+• Housing Plans
+• Building Layouts
+• Structural Concepts
+• Site Plans
+• Infrastructure Layouts
+• Large Scale Development Projects
+State that projects range from residential housing designs to larger engineering developments.
+Featured Projects
+The current website already contains several sample projects.
+Use those projects as references.
+You may professionally expand the descriptions to make the portfolio appear more complete. These projects will be edited later by our internal engineering team.
+Include:
+• Project image
+• Project title
+• Short description
+• Location (sample locations are acceptable)
+• Services provided
+Images
+You may use royalty-free or AI-generated engineering images.
+Do NOT use images clearly representing projects or locations from:
+• United States
+• Canada
+• Australia
+• New Zealand
+• Japan
+      Where
+• Sri Lanka
+possible, use images representing:
+• India
+• Bangladesh
+
+• Pakistan
+• South Asia
+These images are temporary and may be replaced later by our own project photographs.
+Contact Section
+Include a quotation request form at the bottom of the page.
+Include Google Maps using the existing business location from the current website.
+Before publishing the website, please contact us so we can provide the official Facebook page link for the website's social media icons.
+2. Outlets Page
+This page should be simple and professional.
+State that the company's main office and current retail outlet are located in: 54A, Sanasa Ideal Shopping Complex
+Colombo Road
+Gampaha
+Sri Lanka
+Explain that:
+• Computer products
+• Laptops
+• IT accessories
+• Consumer technology products
+are currently available through the main office.
+Mention that additional outlets are planned for other districts across Sri Lanka in the future. Do not create multiple outlet locations.
+Simply state:
+"Additional outlets coming soon."
+Include:
+• Google Map
+• Contact Information
+• Call-to-action button
+      "Contact Us"
+   
+3. IT Services Page
+This page should combine IT solutions with computer hardware products. Create sections for the following.
+Software Solutions
+Include services such as:
+• Database Development
+• Business Software
+• Cashier Software
+• Inventory Management Systems
+• Small Business Solutions
+• Custom Software Development
+• Technical Consultation
+Instead of displaying fixed pricing, encourage visitors to request a quotation.
+Computer Sales
+Create a modern product showcase. Add approximately:
+• 2–3 Dell laptops
+• 2–3 ASUS laptops
+These products are for presentation purposes only.
+There is no requirement to confirm actual stock availability. The objective is simply to make the page look professional. Do not include online purchasing functionality.
+Each product can contain:
+• Product image
+• Model name
+• Short specifications
+• "Contact Us" button
+Hardware Components
+Include a section showing sample products such as:
+         
+• SSDs
+• RAM
+• Hard Drives
+• Keyboards
+• Mice
+• Monitors
+• Networking Equipment
+• Computer Accessories
+Again, these are display items only.
+Technical Services
+Include:
+• Laptop Repair
+• Computer Troubleshooting
+• Hardware Installation
+• Software Installation
+• System Maintenance
+• Business IT Support
+Contact Section
+Add an enquiry form directing enquiries to: info@primelink.com.lk
+Include:
+• Phone
+• Email
+• Business Address
+• Google Map
+4. Contact Page
+Create a professional contact page. Include:
+Contact Information
+          
+PrimeLink Holdings
+54A, Sanasa Ideal Shopping Complex Colombo Road
+Gampaha 10019
+Sri Lanka
+Phone
++94 775 860 868
+Email
+info@primelink.com.lk
+Google Maps
+Embed the company location from the existing website.
+Contact Form
+Include:
+• Name
+• Phone Number
+• Email
+• Subject
+• Message
+The form should send messages directly to: info@primelink.com.lk
+Business Hours
+Display standard business hours in a professional format. These can be updated later if required.
+General Image & Performance Requirements
+The website must be optimized for speed. Requirements:
+• Compress all images before uploading.
+• Use WebP images wherever possible.
+              
+• Avoid uploading unnecessarily large files.
+• Maintain professional visual quality while minimizing storage usage.
+• Keep the overall website lightweight due to hosting limitations.
+The hosting package has limited available storage, so image optimization is essential.
+Final Notes
+Before publishing the completed website:
+• Inform us so we can provide the official Facebook page URL.
+• Ensure all contact forms are functioning correctly.
+• Verify that all Google Maps embeds work properly.
+• Check responsiveness on desktop, tablet, and mobile devices.
+• Ensure all pages load quickly and consistently.
+• Deliver a clean, professional WordPress website that can be easily maintained and expanded by our internal team in the future.
+   

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <rect width="1200" height="900" fill="#0a3d62"/>
+  <!-- Header bar -->
+  <rect width="1200" height="72" fill="#0d1f35"/>
+  <rect x="24" y="18" width="36" height="36" rx="6" fill="#1e88e5"/>
+  <text x="72" y="42" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="white">PRIMELINK HOLDINGS</text>
+  <!-- Hero text -->
+  <text x="80" y="200" font-family="Arial,sans-serif" font-size="52" font-weight="bold" fill="white">Connecting Industries.</text>
+  <text x="80" y="270" font-family="Arial,sans-serif" font-size="52" font-weight="bold" fill="#f39c12">Unlocking Opportunities.</text>
+  <text x="80" y="330" font-family="Arial,sans-serif" font-size="20" fill="rgba(255,255,255,0.75)">Engineering · GIS · Construction · Software · IT</text>
+  <!-- CTA buttons -->
+  <rect x="80" y="370" width="200" height="50" rx="4" fill="#f39c12"/>
+  <text x="132" y="402" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="white">Request Quotation</text>
+  <rect x="300" y="370" width="160" height="50" rx="4" fill="none" stroke="white" stroke-width="2"/>
+  <text x="348" y="402" font-family="Arial,sans-serif" font-size="15" fill="white">Contact Us</text>
+  <!-- Stats strip -->
+  <rect y="500" width="1200" height="100" fill="#1e88e5"/>
+  <text x="150" y="560" font-family="Arial,sans-serif" font-size="36" font-weight="bold" fill="white">200+</text>
+  <text x="130" y="585" font-family="Arial,sans-serif" font-size="13" fill="rgba(255,255,255,0.8)">Projects Completed</text>
+  <text x="430" y="560" font-family="Arial,sans-serif" font-size="36" font-weight="bold" fill="white">150+</text>
+  <text x="415" y="585" font-family="Arial,sans-serif" font-size="13" fill="rgba(255,255,255,0.8)">Satisfied Clients</text>
+  <text x="720" y="560" font-family="Arial,sans-serif" font-size="36" font-weight="bold" fill="white">6</text>
+  <text x="700" y="585" font-family="Arial,sans-serif" font-size="13" fill="rgba(255,255,255,0.8)">Service Sectors</text>
+  <text x="1000" y="560" font-family="Arial,sans-serif" font-size="36" font-weight="bold" fill="white">10+</text>
+  <text x="975" y="585" font-family="Arial,sans-serif" font-size="13" fill="rgba(255,255,255,0.8)">Years Experience</text>
+  <!-- Service cards row -->
+  <rect x="40" y="640" width="260" height="220" rx="8" fill="white"/>
+  <rect x="320" y="640" width="260" height="220" rx="8" fill="white"/>
+  <rect x="600" y="640" width="260" height="220" rx="8" fill="white"/>
+  <rect x="880" y="640" width="260" height="220" rx="8" fill="white"/>
+  <text x="100" y="730" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#0a3d62">Engineering Solutions</text>
+  <text x="380" y="730" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#0a3d62">GIS &amp; Mapping</text>
+  <text x="640" y="730" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#0a3d62">Software Dev</text>
+  <text x="920" y="730" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#0a3d62">IT Products</text>
+</svg>

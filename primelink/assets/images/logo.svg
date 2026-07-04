@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 52" width="220" height="52" role="img" aria-label="Ceylon PrimeLink Holdings logo">
+  <defs>
+    <linearGradient id="pl-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1039a0"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Icon badge: rounded square -->
+  <rect x="0" y="4" width="44" height="44" rx="11" fill="url(#pl-grad)"/>
+  <!-- Subtle inner highlight -->
+  <rect x="0" y="4" width="44" height="22" rx="11" fill="rgba(255,255,255,0.08)"/>
+
+  <!-- PL Monogram — P -->
+  <text
+    x="5" y="36"
+    font-family="Arial,sans-serif"
+    font-size="26"
+    font-weight="900"
+    fill="#ffffff"
+    letter-spacing="-2"
+  >PL</text>
+
+  <!-- Accent dot — amber brand colour -->
+  <circle cx="40" cy="10" r="4" fill="#f59e0b"/>
+
+  <!-- Wordmark: PrimeLink -->
+  <text
+    x="56" y="26"
+    font-family="'Plus Jakarta Sans',Arial,sans-serif"
+    font-size="17"
+    font-weight="800"
+    fill="#0f172a"
+    letter-spacing="-0.5"
+  >PrimeLink</text>
+
+  <!-- Sub-label: Holdings (Pvt) Ltd -->
+  <text
+    x="57" y="41"
+    font-family="'Plus Jakarta Sans',Arial,sans-serif"
+    font-size="9"
+    font-weight="600"
+    fill="#6b7280"
+    letter-spacing="1.8"
+  >HOLDINGS (PVT) LTD</text>
+
+  <!-- Thin accent line under wordmark -->
+  <rect x="57" y="45" width="40" height="1.5" rx="0.75" fill="#f59e0b"/>
+</svg>
