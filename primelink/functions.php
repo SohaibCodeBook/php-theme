@@ -50,7 +50,7 @@ function primelink_assets() {
         'primelink-style',
         get_stylesheet_uri(),
         ['bootstrap', 'fontawesome'],
-        '2.0.3'
+        '2.0.4'
     );
 
     // Bootstrap 5 Bundle JS (includes Popper)

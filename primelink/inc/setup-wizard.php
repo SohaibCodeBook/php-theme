@@ -149,5 +149,14 @@ function primelink_run_setup() {
         set_theme_mod('nav_menu_locations', $locations);
     }
 
+    // Site title + tagline for Google (no SEO plugin — WordPress core reads these).
+    if ( function_exists( 'primelink_seo_title' ) ) {
+        update_option( 'blogname', primelink_seo_title() );
+        update_option( 'blogdescription', primelink_seo_description() );
+    } else {
+        update_option( 'blogname', 'Ceylon primelink holdings' );
+        update_option( 'blogdescription', 'Ceylon PrimeLink Holdings is a Sri Lankan multi-sector company delivering engineering, geotechnical, GIS, construction, software, and IT solutions.' );
+    }
+
     update_option('primelink_setup_done', true);
 }
