@@ -281,6 +281,7 @@ body.is-home #site-header.scrolled {
 .pl-brand-logo {
   display: block;
   width: auto;
+  height: auto;
   object-fit: contain;
   object-position: left center;
 }
@@ -291,6 +292,14 @@ body.is-home #site-header.scrolled {
 .pl-brand-logo--footer {
   height: 38px;
   max-width: 190px;
+}
+
+/* Never recolor the logo image — show Canva colors as-is (blue text) */
+body.is-home #site-header:not(.scrolled) .pl-brand-logo,
+#site-header .pl-brand-logo,
+#site-footer .pl-brand-logo {
+  filter: none !important;
+  opacity: 1 !important;
 }
 
 /* ── Hybrid logo mark (SVG badge + HTML text) ──────────────── */
