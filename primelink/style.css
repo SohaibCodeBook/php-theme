@@ -274,6 +274,23 @@ body.is-home #site-header.scrolled {
   gap: 12px;
   text-decoration: none;
   flex-shrink: 0;
+  line-height: 0;
+  max-height: 42px;
+}
+
+.pl-brand-logo {
+  display: block;
+  width: auto;
+  object-fit: contain;
+  object-position: left center;
+}
+.pl-brand-logo--header {
+  height: 42px;
+  max-width: 200px;
+}
+.pl-brand-logo--footer {
+  height: 38px;
+  max-width: 190px;
 }
 
 /* ── Hybrid logo mark (SVG badge + HTML text) ──────────────── */
@@ -321,14 +338,6 @@ body.is-home #site-header.scrolled {
 body.is-home #site-header:not(.scrolled) .pl-logo-brand-name { color: #ffffff; }
 body.is-home #site-header:not(.scrolled) .pl-logo-sub-name   { color: rgba(255,255,255,0.65); }
 
-/* Custom logo image (uploaded via Appearance → Customize) */
-.pl-custom-logo {
-  height: 42px;
-  width: auto;
-  max-width: 200px;
-  object-fit: contain;
-  display: block;
-}
 /* Homepage transparent state — hamburger white */
 body.is-home #site-header:not(.scrolled) .pl-hamburger span { background: #fff; }
 

@@ -24,15 +24,7 @@
 
       <!-- Logo -->
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="pl-logo" aria-label="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?> – Home">
-        <?php
-        $custom_logo_id = get_theme_mod( 'custom_logo' );
-        if ( $custom_logo_id ) {
-            $logo_url = wp_get_attachment_image_url( $custom_logo_id, 'full' );
-            echo '<img src="' . esc_url( $logo_url ) . '" alt="' . esc_attr( get_bloginfo( 'name' ) ) . '" class="pl-custom-logo" height="42" loading="eager">';
-        } else {
-            primelink_logo_svg( 'default' );
-        }
-        ?>
+        <?php primelink_the_logo( 'header' ); ?>
       </a>
 
       <!-- Desktop nav — uses WordPress menu system -->

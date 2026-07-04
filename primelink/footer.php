@@ -43,7 +43,7 @@
       <!-- Brand -->
       <div class="col-lg-4 col-md-6">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="pl-footer-logo text-decoration-none d-inline-block">
-          <?php primelink_logo_svg( 'footer', 'small' ); ?>
+          <?php primelink_the_logo( 'footer' ); ?>
         </a>
         <p class="pl-footer-desc mt-3"><?php echo esc_html( pl_site( 'footer_desc' ) ); ?></p>
         <div class="pl-social-links">
