@@ -87,6 +87,16 @@ $price_eng_desc  = pl_services( 'price_eng_desc',  'Starting price per project' 
   </div>
 </section>
 
+<!-- SERVICES NOTICE -->
+<section aria-label="<?php esc_attr_e( 'Important notice', 'primelink' ); ?>" style="padding: 2.5rem 0 0;">
+  <div class="container">
+    <div class="pl-alert info" role="note">
+      <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+      <p><?php esc_html_e( 'Most of our services are customized to meet each client\'s specific requirements. Please contact us to discuss your project and request a quote before proceeding.', 'primelink' ); ?></p>
+    </div>
+  </div>
+</section>
+
 <!-- ENGINEERING SERVICES -->
 <section class="section-lg" id="engineering">
   <div class="container">
