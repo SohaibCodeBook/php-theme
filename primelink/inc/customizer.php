@@ -38,13 +38,19 @@ function primelink_customizer( $wp_customize ) {
         'title'       => 'Homepage Settings',
         'priority'    => 100,
         'capability'  => 'edit_theme_options',
-        'description' => 'Edit all homepage content: hero, stats, about, service cards, and why-choose-us cards.',
+        'description' => 'Edit all homepage content: hero, stats, about, service cards, why-choose-us cards, and client reviews.',
     ] );
 
     // Shortcut: register a text field
     $t = function( $key, $lbl, $def ) use ( $wp_customize ) {
         $wp_customize->add_setting( 'pl_hp_' . $key, [ 'default' => $def, 'sanitize_callback' => 'sanitize_text_field', 'transport' => 'refresh' ] );
         $wp_customize->add_control( 'pl_hp_' . $key, [ 'label' => $lbl, 'section' => 'primelink_homepage', 'type' => 'text' ] );
+    };
+
+    // Shortcut: register a textarea field
+    $ta = function( $key, $lbl, $def ) use ( $wp_customize ) {
+        $wp_customize->add_setting( 'pl_hp_' . $key, [ 'default' => $def, 'sanitize_callback' => 'sanitize_textarea_field', 'transport' => 'refresh' ] );
+        $wp_customize->add_control( 'pl_hp_' . $key, [ 'label' => $lbl, 'section' => 'primelink_homepage', 'type' => 'textarea' ] );
     };
 
     // Shortcut: register an image field
@@ -121,6 +127,25 @@ function primelink_customizer( $wp_customize ) {
     foreach ( $whys as $i => [ $dt, $dd ] ) {
         $t( 'why'.$i.'_title', 'Why '.$i.': Title', $dt );
         $t( 'why'.$i.'_desc',  'Why '.$i.': Description', $dd );
+    }
+
+    // Client reviews (6)
+    $t( 'reviews_badge',   'Reviews: Badge Text',  'Client Reviews' );
+    $t( 'reviews_heading', 'Reviews: Heading',     'What Our Clients Say' );
+    $revs = [
+        1 => [ 'DR', 'Dinesh Rajapaksha',   'Property Developer, Gampaha', '5', 'PrimeLink provided an excellent geotechnical investigation report. The borehole drilling and SPT testing were professional and the report was very detailed.' ],
+        2 => [ 'AP', 'Amali Perera',        'Civil Engineer, Kandy',     '5', 'They re-evaluated the slope stability and provided a proper mitigation plan. Very professional service.' ],
+        3 => [ 'MF', 'Mohamed Farouk',      'Business Owner, Colombo',   '5', 'The cashier software works perfectly. Setup was quick and they provided good training. The price was reasonable.' ],
+        4 => [ 'KD', 'Kavinda Dissanayake', 'Engineering Student, USJP', '4', 'PrimeLink completed the ArcGIS analysis within the timeline. Good quality output.' ],
+        5 => [ 'NB', 'Nilupul Bandara',     'Teacher, Gampaha',          '5', 'Good prices compared to Colombo stores. Staff was knowledgeable and helped me choose the right specifications.' ],
+        6 => [ 'SW', 'Sushantha Wijeratne', 'Contractor, Kelaniya',     '5', 'AutoCAD drawings for our housing plan were done neatly and precisely. Communication was good throughout.' ],
+    ];
+    foreach ( $revs as $i => [ $init, $name, $role, $stars, $text ] ) {
+        $t(  'rev'.$i.'_init',  'Review '.$i.': Initials (avatar)', $init );
+        $t(  'rev'.$i.'_name',  'Review '.$i.': Name',            $name );
+        $t(  'rev'.$i.'_role',  'Review '.$i.': Role / Location',  $role );
+        $t(  'rev'.$i.'_stars', 'Review '.$i.': Star Rating (1-5)', $stars );
+        $ta( 'rev'.$i.'_text',  'Review '.$i.': Review Text',     $text );
     }
 
     // ── About Us Page ─────────────────────────────────────────

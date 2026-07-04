@@ -88,6 +88,35 @@ for ( $i = 0; $i < 8; $i++ ) {
         'desc'  => pl_home('why'.$n.'_desc',  $why_desc_d[$i]),
     ];
 }
+
+/* ── Client reviews — read from Customizer (Homepage Settings) ─ */
+$reviews_badge   = pl_home( 'reviews_badge',   'Client Reviews' );
+$reviews_heading = pl_home( 'reviews_heading', 'What Our Clients Say' );
+$review_defaults = [
+    1 => [ 'DR', 'Dinesh Rajapaksha',   'Property Developer, Gampaha', '5', 'PrimeLink provided an excellent geotechnical investigation report. The borehole drilling and SPT testing were professional and the report was very detailed.' ],
+    2 => [ 'AP', 'Amali Perera',        'Civil Engineer, Kandy',     '5', 'They re-evaluated the slope stability and provided a proper mitigation plan. Very professional service.' ],
+    3 => [ 'MF', 'Mohamed Farouk',      'Business Owner, Colombo',   '5', 'The cashier software works perfectly. Setup was quick and they provided good training. The price was reasonable.' ],
+    4 => [ 'KD', 'Kavinda Dissanayake', 'Engineering Student, USJP', '4', 'PrimeLink completed the ArcGIS analysis within the timeline. Good quality output.' ],
+    5 => [ 'NB', 'Nilupul Bandara',     'Teacher, Gampaha',          '5', 'Good prices compared to Colombo stores. Staff was knowledgeable and helped me choose the right specifications.' ],
+    6 => [ 'SW', 'Sushantha Wijeratne', 'Contractor, Kelaniya',     '5', 'AutoCAD drawings for our housing plan were done neatly and precisely. Communication was good throughout.' ],
+];
+$reviews = [];
+for ( $i = 1; $i <= 6; $i++ ) {
+    [ $init_d, $name_d, $role_d, $stars_d, $text_d ] = $review_defaults[ $i ];
+    $text = pl_home( 'rev' . $i . '_text', $text_d );
+    if ( ! $text ) {
+        continue;
+    }
+    $stars = (int) pl_home( 'rev' . $i . '_stars', $stars_d );
+    $stars = max( 1, min( 5, $stars ) );
+    $reviews[] = [
+        'init'  => pl_home( 'rev' . $i . '_init',  $init_d ),
+        'name'  => pl_home( 'rev' . $i . '_name',  $name_d ),
+        'role'  => pl_home( 'rev' . $i . '_role',  $role_d ),
+        'stars' => $stars,
+        'text'  => $text,
+    ];
+}
 ?>
 
 <!-- HERO -->
@@ -293,28 +322,21 @@ for ( $i = 0; $i < 8; $i++ ) {
 <section class="section-lg" style="background:var(--pl-bg);" aria-labelledby="reviews-h">
   <div class="container">
     <div class="text-center mb-5">
-      <div class="section-badge mx-auto"><i class="fa-solid fa-star fa-xs me-1" aria-hidden="true"></i> <?php esc_html_e('Client Reviews','primelink'); ?></div>
-      <h2 id="reviews-h" class="section-title"><?php esc_html_e('What Our Clients Say','primelink'); ?></h2>
+      <div class="section-badge mx-auto"><i class="fa-solid fa-star fa-xs me-1" aria-hidden="true"></i> <?php echo esc_html( $reviews_badge ); ?></div>
+      <h2 id="reviews-h" class="section-title"><?php echo esc_html( $reviews_heading ); ?></h2>
       <div class="section-divider center"></div>
     </div>
     <div class="row g-4">
-      <?php foreach ([
-        ['DR','Dinesh Rajapaksha',  'Property Developer, Gampaha',5,'PrimeLink provided an excellent geotechnical investigation report. The borehole drilling and SPT testing were professional and the report was very detailed.'],
-        ['AP','Amali Perera',       'Civil Engineer, Kandy',       5,'They re-evaluated the slope stability and provided a proper mitigation plan. Very professional service.'],
-        ['MF','Mohamed Farouk',     'Business Owner, Colombo',     5,'The cashier software works perfectly. Setup was quick and they provided good training. The price was reasonable.'],
-        ['KD','Kavinda Dissanayake','Engineering Student, USJP',   4,'PrimeLink completed the ArcGIS analysis within the timeline. Good quality output.'],
-        ['NB','Nilupul Bandara',    'Teacher, Gampaha',            5,'Good prices compared to Colombo stores. Staff was knowledgeable and helped me choose the right specifications.'],
-        ['SW','Sushantha Wijeratne','Contractor, Kelaniya',        5,'AutoCAD drawings for our housing plan were done neatly and precisely. Communication was good throughout.'],
-      ] as [$init,$name,$role,$stars,$text]) : ?>
+      <?php foreach ( $reviews as $review ) : ?>
       <div class="col-lg-4 col-md-6">
         <div class="pl-review-card h-100">
-          <div class="pl-stars" aria-label="<?php echo esc_attr($stars.' out of 5 stars'); ?>"><?php echo str_repeat('★',$stars).str_repeat('☆',5-$stars); ?></div>
-          <p class="pl-review-text">"<?php echo esc_html($text); ?>"</p>
+          <div class="pl-stars" aria-label="<?php echo esc_attr( $review['stars'] . ' out of 5 stars' ); ?>"><?php echo str_repeat( '★', $review['stars'] ) . str_repeat( '☆', 5 - $review['stars'] ); ?></div>
+          <p class="pl-review-text">"<?php echo esc_html( $review['text'] ); ?>"</p>
           <div class="pl-reviewer">
-            <div class="pl-reviewer-avatar" aria-hidden="true"><?php echo esc_html($init); ?></div>
+            <div class="pl-reviewer-avatar" aria-hidden="true"><?php echo esc_html( $review['init'] ); ?></div>
             <div>
-              <span class="pl-reviewer-name"><?php echo esc_html($name); ?></span>
-              <span class="pl-reviewer-title"><?php echo esc_html($role); ?></span>
+              <span class="pl-reviewer-name"><?php echo esc_html( $review['name'] ); ?></span>
+              <span class="pl-reviewer-title"><?php echo esc_html( $review['role'] ); ?></span>
             </div>
           </div>
         </div>
