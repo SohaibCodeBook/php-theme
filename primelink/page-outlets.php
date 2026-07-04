@@ -40,7 +40,7 @@ for ( $i = 1; $i <= 10; $i++ ) {
     if ( $v ) $districts[] = $v;
 }
 
-$default_map = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.9!2d80.00222!3d7.08643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2f8b5bdb5b0ab%3A0x5d7b3f0f3f7b3f0f!2s54A%20Sanasa%20Ideal%20Shopping%20Complex%2C%20Colombo%20Rd%2C%20Gampaha!5e0!3m2!1sen!2slk!4v1';
+$default_map = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.2941447470976!2d79.99489697505702!3d7.091862592911288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2fbed579aaaab%3A0x50af137ede85e371!2sSanasa%20Ideal%20Shopping%20Complex!5e0!3m2!1sen!2s!4v1783159692434!5m2!1sen!2s';
 $map_url = pl_outlets( 'map_url', $default_map );
 ?>
 

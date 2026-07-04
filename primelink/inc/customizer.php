@@ -430,7 +430,7 @@ function primelink_customizer( $wp_customize ) {
     }
 
     // Map
-    $ot( 'map_url', 'Google Maps Embed src URL', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.9!2d80.00222!3d7.08643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2f8b5bdb5b0ab%3A0x5d7b3f0f3f7b3f0f!2s54A%20Sanasa%20Ideal%20Shopping%20Complex%2C%20Colombo%20Rd%2C%20Gampaha!5e0!3m2!1sen!2slk!4v1' );
+    $ot( 'map_url', 'Google Maps Embed src URL', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.2941447470976!2d79.99489697505702!3d7.091862592911288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2fbed579aaaab%3A0x50af137ede85e371!2sSanasa%20Ideal%20Shopping%20Complex!5e0!3m2!1sen!2s!4v1783159692434!5m2!1sen!2s' );
 
     // ── IT Services Page ──────────────────────────────────────
     $wp_customize->add_section( 'primelink_it', [
@@ -482,7 +482,7 @@ function primelink_customizer( $wp_customize ) {
     // CTA form
     $it( 'cta_heading', 'CTA: Heading',  'Send Your IT Enquiry' );
     $it( 'cta_subtext', 'CTA: Sub-text', 'For software, hardware, or technical support enquiries. We respond within 24 hours on business days.' );
-    $it( 'map_url',     'Google Maps Embed src URL', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.9!2d80.00222!3d7.08643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2f8b5bdb5b0ab%3A0x5d7b3f0f3f7b3f0f!2s54A%20Sanasa%20Ideal%20Shopping%20Complex%2C%20Colombo%20Rd%2C%20Gampaha!5e0!3m2!1sen!2slk!4v1' );
+    $it( 'map_url',     'Google Maps Embed src URL', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.2941447470976!2d79.99489697505702!3d7.091862592911288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2fbed579aaaab%3A0x50af137ede85e371!2sSanasa%20Ideal%20Shopping%20Complex!5e0!3m2!1sen!2s!4v1783159692434!5m2!1sen!2s' );
 
     // ── Contact Page ──────────────────────────────────────────
     $wp_customize->add_section( 'primelink_contact_page', [
@@ -502,7 +502,7 @@ function primelink_customizer( $wp_customize ) {
     $cp( 'banner_subtext', 'Banner: Sub-text',     'Have a project enquiry, need a quotation, or want to discuss a service? Our team is ready to assist.' );
     $cp( 'form_heading',   'Form: Heading',         'Send Us a Message' );
     $cp( 'form_subtitle',  'Form: Sub-text',        'Use this form for project enquiries, quotation requests, or general questions. We respond within 24 hours on business days.' );
-    $cp( 'map_url',        'Google Maps Embed src URL', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.9!2d80.00222!3d7.08643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2f8b5bdb5b0ab%3A0x5d7b3f0f3f7b3f0f!2s54A%20Sanasa%20Ideal%20Shopping%20Complex%2C%20Colombo%20Rd%2C%20Gampaha!5e0!3m2!1sen!2slk!4v1' );
+    $cp( 'map_url',        'Google Maps Embed src URL', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.2941447470976!2d79.99489697505702!3d7.091862592911288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2fbed579aaaab%3A0x50af137ede85e371!2sSanasa%20Ideal%20Shopping%20Complex!5e0!3m2!1sen!2s!4v1783159692434!5m2!1sen!2s' );
 }
 add_action( 'customize_register', 'primelink_customizer' );
 
