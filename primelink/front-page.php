@@ -171,6 +171,7 @@ for ( $i = 0; $i < 8; $i++ ) {
             ['fa-shield-halved','Landslide Mitigation & Slope Stability'],
             ['fa-code','Custom Software & Database Development'],
             ['fa-laptop','IT Products & Technical Support'],
+            ['fa-hammer','Construction Consultancy & Project Support'],
           ] as [$icon,$label]) : ?>
           <li>
             <span class="check-icon"><i class="fa-solid fa-check fa-xs" aria-hidden="true"></i></span>
