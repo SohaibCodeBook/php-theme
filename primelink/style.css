@@ -49,6 +49,16 @@ Tags: corporate, business, engineering, responsive, bootstrap
   --pl-font-body: 'Inter', sans-serif;
 
   --pl-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Header + logo sizing (keep offset in sync when changing logo height) */
+  --pl-logo-height-header: 58px;
+  --pl-logo-height-footer: 54px;
+  --pl-logo-max-width-header: 280px;
+  --pl-logo-max-width-footer: 260px;
+  --pl-header-padding-y: 16px;
+  --pl-header-padding-y-home: 26px;
+  --pl-header-padding-y-scrolled: 14px;
+  --pl-header-offset: calc(var(--pl-header-padding-y-home) * 2 + var(--pl-logo-height-header) + 32px);
 }
 
 /* ============================================================
@@ -232,7 +242,7 @@ p:last-child { margin-bottom: 0; }
   top: 0; left: 0; right: 0;
   z-index: 1050;
   transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
-  padding: 14px 0;
+  padding: var(--pl-header-padding-y) 0;
   /* Default: solid white for all inner pages */
   background: rgba(255,255,255,.98);
   backdrop-filter: blur(20px);
@@ -243,21 +253,21 @@ p:last-child { margin-bottom: 0; }
 body.is-home #site-header {
   background: transparent;
   box-shadow: none;
-  padding: 22px 0;
+  padding: var(--pl-header-padding-y-home) 0;
 }
 body.is-home #site-header.scrolled {
   background: rgba(255,255,255,.97);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow: 0 1px 0 rgba(0,0,0,.07), var(--pl-shadow-sm);
-  padding: 12px 0;
+  padding: var(--pl-header-padding-y-scrolled) 0;
 }
 #site-header.scrolled {
   background: rgba(255,255,255,.97);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow: 0 1px 0 rgba(0,0,0,.07), var(--pl-shadow-sm);
-  padding: 12px 0;
+  padding: var(--pl-header-padding-y-scrolled) 0;
 }
 
 .pl-navbar {
@@ -275,7 +285,7 @@ body.is-home #site-header.scrolled {
   text-decoration: none;
   flex-shrink: 0;
   line-height: 0;
-  max-height: 42px;
+  max-height: var(--pl-logo-height-header);
 }
 
 .pl-brand-logo {
@@ -286,12 +296,16 @@ body.is-home #site-header.scrolled {
   object-position: left center;
 }
 .pl-brand-logo--header {
-  height: 42px;
-  max-width: 200px;
+  height: var(--pl-logo-height-header);
+  max-width: var(--pl-logo-max-width-header);
 }
 .pl-brand-logo--footer {
-  height: 38px;
-  max-width: 190px;
+  height: var(--pl-logo-height-footer);
+  max-width: var(--pl-logo-max-width-footer);
+}
+.pl-footer-logo {
+  display: inline-block;
+  line-height: 0;
 }
 
 /* Never recolor the logo image — show Canva colors as-is (blue text) */
@@ -481,7 +495,7 @@ body.is-home #site-header:not(.scrolled) .pl-hamburger span { background: #fff; 
   align-items: center;
   position: relative;
   overflow: hidden;
-  padding: 130px 0 80px;
+  padding: var(--pl-header-offset) 0 80px;
 }
 
 /* Geometric decoration */
@@ -1118,7 +1132,7 @@ body.is-home #site-header:not(.scrolled) .pl-hamburger span { background: #fff; 
    ============================================================ */
 .pl-page-banner {
   background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 60%, #1a56db 100%);
-  padding: 130px 0 60px;
+  padding: calc(var(--pl-header-padding-y) * 2 + var(--pl-logo-height-header) + 32px) 0 60px;
   position: relative;
   overflow: hidden;
 }
@@ -1637,7 +1651,7 @@ body.is-home #site-header:not(.scrolled) .pl-hamburger span { background: #fff; 
 @media (max-width: 991.98px) {
   .section-lg { padding: 70px 0; }
   .section-md { padding: 50px 0; }
-  .pl-hero { padding: 120px 0 70px; min-height: auto; }
+  .pl-hero { padding: var(--pl-header-offset) 0 70px; min-height: auto; }
   .pl-hero h1 { font-size: clamp(1.85rem, 4.5vw, 2.75rem); }
   .pl-hero-main-img { height: 320px; }
   .pl-hero-float-card.top-left { top: -10px; left: -10px; }
@@ -1663,8 +1677,19 @@ body.is-home #site-header:not(.scrolled) .pl-hamburger span { background: #fff; 
   .pl-nav-cta { display: none; }
   .pl-hamburger { display: flex; }
 
+  /* Header + hero — smaller logo on mobile */
+  :root {
+    --pl-logo-height-header: 50px;
+    --pl-logo-height-footer: 46px;
+    --pl-logo-max-width-header: 230px;
+    --pl-logo-max-width-footer: 220px;
+    --pl-header-padding-y: 14px;
+    --pl-header-padding-y-home: 20px;
+    --pl-header-offset: calc(var(--pl-header-padding-y-home) * 2 + var(--pl-logo-height-header) + 24px);
+  }
+
   /* Hero */
-  .pl-hero { padding: 100px 0 60px; }
+  .pl-hero { padding: var(--pl-header-offset) 0 60px; }
   .pl-hero-visual { margin-top: 3rem; }
   .pl-hero-main-img { height: 260px; }
   .pl-hero-float-card { padding: 12px 14px; min-width: 140px; }
@@ -1856,16 +1881,11 @@ body.is-home #site-header:not(.scrolled) .pl-nav-cta {
   color: #fff !important;
 }
 
-/* Page banner spacing fix — ensure content below banner doesn't hide behind fixed header */
-.pl-page-banner { padding-top: 110px; padding-bottom: 50px; }
 @media (max-width: 767.98px) {
-  .pl-page-banner { padding-top: 90px; padding-bottom: 36px; }
-}
-
-/* Fix hero on homepage — extra top padding for fixed nav */
-.pl-hero { padding-top: 110px; }
-@media (max-width: 767.98px) {
-  .pl-hero { padding-top: 90px; }
+  .pl-page-banner {
+    padding-top: var(--pl-header-offset);
+    padding-bottom: 36px;
+  }
 }
 
 /* Bootstrap container padding fix */
